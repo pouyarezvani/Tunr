@@ -1,11 +1,14 @@
 {% extends 'base.html'%}
 {% block content %}
-<h2>Songs </h2>
-<ul>
+
+<ul class="tracks">
+    <h2>Songs </h2>
   {% for song in songs %}
-    <li>
-      <a href="{{song.spotify_preview}}">{{ song.title }}</a>
+  <a href="{{song.spotify_preview}}">
+    <li class="track">
+      {{ song.title }}
     </li>
+  </a>
   {% endfor %}
 </ul>
 
