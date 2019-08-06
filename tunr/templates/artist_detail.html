@@ -1,0 +1,17 @@
+
+{% extends 'base.html'%}
+{% block content %}
+<h2>{{artist.name}}</h2>
+<h4>{{artist.nationality}}</h4>
+
+<img src="{{artist.photo_url}}" class="artist-photo"/>
+
+<h3>Songs</h3>
+<ul>
+  {% for song in artist.songs.all %}
+    <li>
+      <a href="{{song.spotify_preview}}">{{song.title}}</a>
+    </li>
+  {% endfor %}
+</ul>
+{% endblock %}
