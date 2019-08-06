@@ -21,15 +21,6 @@
 	--margin-lg: 30px;
 	--margin-xl: 60px;
 
-	/* Font-sizes */
-
-	--x-small: 11px;
-	--small: 14px;
-	--medium: 16px;
-	--large: 20px;
-	--x-large: 24px;
-	--xx-large: 36px;
-	--xxx-large: 52px;
 }
 
 body {
@@ -158,4 +149,41 @@ a {
 
 .delete {
   color: var(--red);
+}
+
+.form-section{
+  width: max-content;
+  margin: 2em auto;
+  padding: var(--padding);
+  color: var(--white);
+  display: grid;
+  place-content: center;
+  text-align: center;
+  background: var(--black);
+}
+
+.form-section form {
+  width: 100%;
+}
+
+.form-section p {
+  display: flex;
+  flex-direction: column;
+}
+.form-section h1 {
+  margin: var(--margin-sm);
+}
+
+.form-section button {
+  background-color: var(--green);
+  border: none;
+  border-radius: 5%;
+  font-size: 1.5em;
+  padding: var(--padding-sm);
+  color: var(--white);
+}
+
+textarea {
+  resize: none;
+  height: 5em;
 }
