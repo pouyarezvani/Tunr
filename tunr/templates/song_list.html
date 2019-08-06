@@ -9,6 +9,8 @@
       {{ song.title }}
     </li>
   </a>
+  <h4><a href="{% url 'song_delete' pk=song.pk %}" class="delete">delete</a> {{song.title}}</h4>
+  <h2><a href="{% url 'song_edit' pk=song.pk %}">edit</a></h2>
   {% endfor %}
 </ul>
 

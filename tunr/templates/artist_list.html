@@ -2,7 +2,7 @@
 
 {% block content %}
 <ul class='tracks'>
-  <h2>Artists <a href="">+</a></h2>
+  <h2>Artists <a href="{% url 'artist_create' %}">+</a></h2>
   {% for artist in artists %}
   <a href="{% url 'artist_detail' pk=artist.pk %}">
     <li class='track'>

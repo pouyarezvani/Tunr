@@ -5,15 +5,14 @@
 
 <section class="artist-header" style="background-image:url({{artist.photo_url}})">
   <section class="artist-info">
-      <h2>{{artist.name}} <a href="">edit</a></h2>
-      <h4><a href="" class="delete">delete</a> {{artist.nationality}}</h4>
+      <h2>{{artist.name}} <a href="{% url 'artist_edit' pk=artist.pk %}">edit</a></h2>
+      <h4><a href="{% url 'artist_delete' pk=artist.pk %}" class="delete">delete</a> {{artist.name}}</h4>
   </section>
 </section>
 
 
-
 <ul class="tracks">
-    <h2>Songs <a href="">+</a></h2>
+    <h2>Songs <a href="{% url 'song_create' pk=artist.pk %}">+</a></h2>
   {% for song in artist.songs.all %}
   <a href="{{song.spotify_preview}}">
     <li class="track">
