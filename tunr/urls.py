@@ -11,5 +11,6 @@ urlpatterns = [
   path('songs', views.song_list, name='song_list'),
   path('songs/<int:pk>/edit', views.song_edit, name='song_edit'),
   path('songs/<int:pk>/delete', views.song_delete, name='song_delete'),
-  path('status', views.json_res, name='status')
+  path('status', views.json_res, name='status'),
+  path('profile/', views.profile, name='profile')
 ]

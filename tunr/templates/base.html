@@ -12,8 +12,17 @@
 		<nav>
       <h1>Tun.r</h1>
       <section>
-          <a href="/songs">Songs</a>
-          <a href="/">Artists</a>
+		  	{% if user.is_authenticated %}
+				Welcome, {{user.username}}
+				<a href="{% url 'logout' %}">Signout</a>
+			{% else %}
+				<a href="{% url 'login' %}">Login</a>
+				<a href="{% url 'register' %}">Sign up</a>
+			{% endif %}
+			  
+
+          	<a href="/songs">Songs</a>
+          	<a href="/">Artists</a>
       </section>
 			
 		</nav>

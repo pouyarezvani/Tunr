@@ -62,14 +62,14 @@ nav h1 {
 }
 
 .track {
-    border-top: 1px solid var(--light-black);
-    height: max-content;
-    display: flex;
-    flex-flow: row wrap;
-    align-items: center;
-    padding: var(--padding-sm);
-    color: var(--white);
-    text-decoration: none;
+  border-top: 1px solid var(--light-black);
+  height: max-content;
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  padding: var(--padding-sm);
+  color: var(--white);
+  text-decoration: none;
 }
 .track:hover {
   background: var(--light-black);
@@ -89,12 +89,12 @@ nav h1 {
 
 
 .tracks {
-    display: flex;
-    flex-flow: column wrap;
-    margin: var(--margin);
-    padding: var(--padding-sm);
-    background: var(--black);
-    text-decoration: none;
+  display: flex;
+  flex-flow: column wrap;
+  margin: var(--margin);
+  padding: var(--padding-sm);
+  background: var(--black);
+  text-decoration: none;
 }
 
 .tracks h2 {
@@ -102,18 +102,18 @@ nav h1 {
 }
 
 .artist-header {
-    height: 320px;
-    border-bottom: 1px solid var(--light-black);
-    position: relative;
-    background-size: cover;
-    background-position: top;
-    background-repeat: no-repeat;
-    overflow: hidden;
-    z-index: 1;
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-between;
-    align-items: flex-end;
+  height: 320px;
+  border-bottom: 1px solid var(--light-black);
+  position: relative;
+  background-size: cover;
+  background-position: top;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  z-index: 1;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: flex-end;
 }
 
 .artist-header:before {
@@ -133,15 +133,15 @@ nav h1 {
 }
 
 .artist-info { 
-    width: 100%;
-    z-index: 1;
-    background: rgba( 24, 24, 24, .6);
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-between;
-    align-items: center;
-    color: var(--white);
-    padding: 0 var(--padding-lg);
+  width: 100%;
+  z-index: 1;
+  background: rgba( 24, 24, 24, .6);
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: center;
+  color: var(--white);
+  padding: 0 var(--padding-lg);
 }
 
 a {
@@ -187,4 +187,9 @@ a {
 textarea {
   resize: none;
   height: 5em;
+}
+
+.profile-name{
+  color: var(--green);
+  margin: var(--margin);
 }
