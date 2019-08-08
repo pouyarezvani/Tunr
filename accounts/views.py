@@ -37,7 +37,7 @@ def register(request):
     # else
     else:
         #send form
-        return render(request, 'accounts/register.html')
+        return render(request, 'register.html')
 
 def login(request):
     # if POST
@@ -57,7 +57,7 @@ def login(request):
         else:
             return render(request, 'login.html', {'error': 'Invalid Credentials'})
     else: 
-        return render(request, 'accounts/login.html')
+        return render(request, 'login.html')
 
 def logout(request):
     auth.logout(request)
